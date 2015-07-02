@@ -1,28 +1,26 @@
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+// ConsoleApplication4.cpp: 主要專案檔。
 
-# Precompiled Headers
-*.gch
-*.pch
+#include "stdafx.h"
+#include "iostream"
+#include "string"
+using namespace System;
+using namespace std;
+int main(array<System::String ^> ^args)
+{
+	cout << "Enter\n";
+	string word;
+	cin >> word;
+	for (int i =0;i<= word.size()-1;i++)
+	{
+		for (int v = 0; v <= i; v++)
+		{
+			cout << " ";
+		}
+		cout << word[i]<<endl;
+	}
+		cout << "\nbye\n";
+		system("pause");
+		return 0;
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+	
+}
